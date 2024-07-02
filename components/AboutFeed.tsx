@@ -66,7 +66,7 @@ function AboutFeed({}: Props) {
               <AiFillMail /> Contact:
               <br />{" "}
               <span className="text-sm text-gray-400">
-                sashenjayathilaka95@gmail.com
+                abdellatif20@graduate.utm.my
               </span>
             </p>
             <form

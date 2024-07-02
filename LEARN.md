@@ -270,7 +270,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## :handshake: Contact
 
-Your Name - [@twitter_handle](https://twitter.com/SashenHasinduJ) - sashenjayathilaka95@gmail.com
+Your Name - [@twitter_handle](https://twitter.com/SashenHasinduJ) - abdellatif20@graduate.utm.my
 
 Project Link: [https://github.com/SashenJayathilaka/NETFLIX-Clone.git](https://github.com/SashenJayathilaka/NETFLIX-Clone.git)
 

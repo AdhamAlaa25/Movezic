@@ -78,13 +78,13 @@ function MainPage({
               type="movie"
             />
             <Row
-              title="Top Rated"
+              title="Recommended for you"
               movies={topRated}
               isDetails={false}
               type="movie"
             />
             <Row
-              title="Action Thrillers"
+              title="Similar For You"
               movies={actionMovies}
               isDetails={false}
               type="movie"
@@ -120,5 +120,22 @@ function MainPage({
     </>
   );
 }
+// MainPage component
+const fetchContentRecommendations = async () => {
+  const title = netflixOriginals[0]?.title || trendingNow[0]?.title;
+  if (title) {
+      const response = await fetch(`/api/recommendations/content/${encodeURIComponent(title)}`);
+      const data = await response.json();
+      setContentRecommendations(data);
+  }
+};
+
+const fetchCollaborativeRecommendations = async () => {
+  const userId = session.user.id;
+  const response = await fetch(`/api/recommendations/collaborative/${userId}`);
+  const data = await response.json();
+  setCollaborativeRecommendations(data);
+};
+
 
 export default MainPage;

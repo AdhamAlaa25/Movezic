@@ -39,10 +39,10 @@ function Navbar({ isSearch, setSearchTerm, searchThrem }: Props) {
     >
       <div className="flex items-center space-x-2 md:space-x-10">
         <img
-          src="https://rb.gy/ulxxee"
-          alt="netflix"
-          width={120}
-          height={120}
+          src="./assets/Netflix_Logo_PMS.png"
+          alt="MovieZic"
+          width={50}
+          height={50}
           className="cursor-pointer object-contain"
           onClick={() => router.push("/")}
         />
@@ -65,6 +65,12 @@ function Navbar({ isSearch, setSearchTerm, searchThrem }: Props) {
             onClick={() => router.push("/")}
           >
             Movies
+          </li>
+          <li
+            className="cursor-pointer text-[16px] hover:underline font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]"
+            onClick={() => router.push("" + process.env.NEXT_PUBLIC_MUSIC_URL)}
+          >
+            Music
           </li>
           <li
             className="cursor-pointer text-[16px] hover:underline font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]"
@@ -97,7 +103,8 @@ function Navbar({ isSearch, setSearchTerm, searchThrem }: Props) {
           />
         )}
         <AiFillBell className="h-6 w-6 cursor-pointer" />
-        <RiNetflixFill className="h-6 w-6 cursor-pointer text-red-800" />
+        {/* ADHAM */}
+        {/* <RiNetflixFill className="h-6 w-6 cursor-pointer text-red-800" /> */}
         <div onClick={() => signOut()} className="cursor-pointer">
           <img
             src={session?.user?.image!}

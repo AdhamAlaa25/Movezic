@@ -41,7 +41,7 @@ function Footer({}: Props) {
             Corporate Information
           </li>
           <li className="my-1 md:mr-4 hover:underline cursor-pointer text-xs font-medium">
-            Only on Netflix
+            Movezic
           </li>
           <li className="my-1 md:mr-4 hover:underline cursor-pointer text-xs font-medium">
             Media Centre
@@ -51,9 +51,9 @@ function Footer({}: Props) {
           </li>
           <li className="my-1 md:mr-4 hover:underline cursor-pointer text-xs font-medium">
             {" "}
-            <a href="https://www.linkedin.com/in/naveen-polasa/">
+            {/* <a href="https://www.linkedin.com/in/adham-abdelraouf-043776266/">
               Contact Us
-            </a>{" "}
+            </a>{" "} */}
           </li>
         </ul>
         <button className="flex justify-center items-center font-medium h-12 w-36 border border-[#737373]">
@@ -69,15 +69,15 @@ function Footer({}: Props) {
             alt="drop-down"
           />
         </button>
-        <p className="my-4 text-xs font-medium">Netflix</p>
+        <p className="my-4 text-xs font-medium">Movezic</p>
         <p className="my-4 text-xs font-medium">
-          sashenjayathilaka95@gmail.com
+          abdellatif20@graduate.utm.my
         </p>
       </div>
 
-      <div className="h-9 py-1 text-white text-center bg-[#333333]">
+      {/* <div className="h-9 py-1 text-white text-center bg-[#333333]">
         For Educational Purposes Only
-      </div>
+      </div> */}
     </div>
   );
 }
