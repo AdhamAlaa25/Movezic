@@ -59,3 +59,5 @@ function Trailer({ movieTrailer, movieDetails }: Props) {
 }
 
 export default Trailer;
+// Add this line at the end of the file
+export {};

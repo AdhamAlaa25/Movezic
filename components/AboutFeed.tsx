@@ -101,3 +101,5 @@ function AboutFeed({}: Props) {
 }
 
 export default AboutFeed;
+// Add this line at the end of the file
+export {};

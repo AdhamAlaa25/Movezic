@@ -84,3 +84,5 @@ function Footer({}: Props) {
 }
 
 export default Footer;
+// Add this line at the end of the file
+export {};

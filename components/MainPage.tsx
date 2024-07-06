@@ -143,3 +143,5 @@ const fetchCollaborativeRecommendations = async () => {
 
 
 export default MainPage;
+// Add this line at the end of the file
+export {};

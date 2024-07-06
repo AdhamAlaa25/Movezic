@@ -118,3 +118,5 @@ function Navbar({ isSearch, setSearchTerm, searchThrem }: Props) {
 }
 
 export default Navbar;
+// Add this line at the end of the file
+export {};
