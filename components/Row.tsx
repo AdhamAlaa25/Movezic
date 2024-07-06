@@ -24,6 +24,7 @@ function Row({
   isfavourite,
   likeMovies,
 }: Props) {
+  
   const rowRef = useRef<HTMLDivElement>(null);
   const [isMoved, setIsMoved] = useState(false);
 

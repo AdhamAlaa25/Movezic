@@ -8,10 +8,11 @@ import { useSession } from "next-auth/react";
 import { useState } from "react";
 
 import { AiFillMail } from "react-icons/ai";
-import { GoRequestChanges } from "react-icons/go";
+import { GoLightBulb  } from "react-icons/go";
 import { MdCastForEducation } from "react-icons/md";
-import { RiNetflixFill } from "react-icons/ri";
+//import { RiNetflixFill } from "react-icons/ri";
 import { firestore } from "../firebase/firebase";
+import { RiNetflixFill } from "react-icons/ri";
 
 type Props = {};
 
@@ -56,26 +57,26 @@ function AboutFeed({}: Props) {
             />
           </video>
           <div className="items-center space-y-4">
-            <p className="flex justify-start items-center gap-4 text-xl font-semibold">
+            {/* <p className="flex justify-start items-center gap-4 text-xl font-semibold">
               <RiNetflixFill /> Netflix Clone
             </p>
             <p className="flex justify-start items-center gap-4 text-lg font-semibold">
               <MdCastForEducation /> For Educational Purposes Only
-            </p>
-            <p className="flex justify-start items-center gap-4 text-lg font-semibold">
+            </p> */}
+            {/* <p className="flex justify-start items-center gap-4 text-lg font-semibold">
               <AiFillMail /> Contact:
               <br />{" "}
               <span className="text-sm text-gray-400">
                 abdellatif20@graduate.utm.my
               </span>
-            </p>
+            </p> */}
             <form
               className="pt-20 flex flex-col items-start"
               onSubmit={handleSubmit}
             >
-              <p className="flex justify-start items-center space-x-4 text-lg font-medium gap-4">
-                <GoRequestChanges /> Feedback
-              </p>
+              {/* <p className="flex justify-start items-center space-x-4 text-lg font-medium gap-4">
+                <GoLightBulb  /> Feedback
+              </p> */}
               <input
                 className="py-6 w-[500px] mt-4 bg-gray-900 placeholder:text-gray-400 rounded-md outline-none px-2.5"
                 placeholder="Request Source Code and Feedback"

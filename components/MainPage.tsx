@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 
 import { Movie } from "../typings";
@@ -5,6 +7,8 @@ import Footer from "./Footer";
 import HomeBanner from "./HomeBanner";
 import Navbar from "./Navbar";
 import Row from "./Row";
+//import Row from "./Row";
+
 
 type Props = {
   netflixOriginals: Movie[];
@@ -84,7 +88,7 @@ function MainPage({
               type="movie"
             />
             <Row
-              title="Similar For You"
+              title="Similar For you"
               movies={actionMovies}
               isDetails={false}
               type="movie"
@@ -121,7 +125,7 @@ function MainPage({
   );
 }
 // MainPage component
-const fetchContentRecommendations = async () => {
+/* const fetchContentRecommendations = async () => {
   const title = netflixOriginals[0]?.title || trendingNow[0]?.title;
   if (title) {
       const response = await fetch(`/api/recommendations/content/${encodeURIComponent(title)}`);
@@ -135,7 +139,7 @@ const fetchCollaborativeRecommendations = async () => {
   const response = await fetch(`/api/recommendations/collaborative/${userId}`);
   const data = await response.json();
   setCollaborativeRecommendations(data);
-};
+}; */
 
 
 export default MainPage;
